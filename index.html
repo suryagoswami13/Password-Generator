@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="css/main.css">
+	 <link rel="stylesheet" href="css/animate.min.css">
+
+	<!--  -->
+    <script>
+        var keyList = "ABCDEFGHIKKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*_.?,-`=|:;<>"
+        var temp = ''
+
+        function generatepass(plength){
+            temp=''
+            for(i=0;i<plength;i++)
+            {
+                temp = temp + keyList.charAt(Math.floor(Math.random() * keyList.length))
+            }
+            return temp;
+        }
+
+        function populateform(enterLength){
+            document.passGen.output.value = generatepass(enterLength)
+        }
+
+				// const myInput = document.getElementById("myInput");
+				// const btnCopy = document.getElementById("btnCopy");
+				//
+				// btnCopy.onClick = function () {
+				// 	myInput.select();
+				// 	document.execCommand("copy");
+				//
+				// };
+				function myFunction() {
+					// Get the text field
+					var copyText = document.getElementById("myInput");
+
+					// Select the text field
+					copyText.select();
+					// copyText.setSelectionRange(0,99999); //For mobile devices
+
+					// copy the text inside the text field
+					document.execCommand("copy");
+
+					// Alert the copied text
+					alert("Copied the text: " + copyText.value);
+				}
+
+	</script>
+</head>
+
+<body>
+	<header>
+		 <h4>Welcome 👤</h4>
+	</header>
+	<h1 class="first animate__animated animate__backInUp">PASSWORD GENERATOR</h1>
+	<div class="container">
+		<h1 class="animate__animated animate__flash">Create strong passwords with Password Generator 🔑</h2>
+	    <form action="" name="passGen">
+          <div class="col-xs-12">
+		        <input id="myInput" type="text" name="output" class="out" disabled>
+						 <!-- <span class="spann">✅ Strong password</span> -->
+		        <input type="button" value="Generate Password" class="btn btn-success myBtn" onClick="populateform(this.form.length.value)" >
+						<span><button type="button" onclick="myFunction()">Copy Password</button></span>
+						<div class="col-xs-12">
+							<div class="col-xs-6">
+									<p class="pass animate__animated animate__flash">Enter Password Length : </p>
+									 <!-- <br>
+									(Lengthen your password and strengthen your security).<br>
+						<br>Copy your generated Password.	</p> -->
+						</div>
+							<div class="col-xs-6">
+									<input type="text" name="length" size="3" value="6" class="in">
+									<!-- <span><button id="btnCopy" type="button" onclick="myFunction()">Copy Password</button> </span> -->
+							 </div>
+				  </div>
+		        <!-- <div class="col-xs-2"></div> -->
+	        </div>
+	    </form>
+			<!-- <br>
+			<br> -->
+			<section class="wrap-up">
+				<div class="col-xs-12">
+					<h1>Password Manager with Password Generator: <br> The solution to weak passwords</h1>
+						<div class="col-xs-4">
+								<p>! Do you use any of these weak passwords?</p>
+								<ul>
+									<li>Password</li>
+									<li>123456</li>
+									<li>Qwerty</li>
+									<li>Your child's name</li>
+									<li>I always use the same password.</li>
+								</ul>
+						</div>
+						<div class="col-xs-4">
+								<p>! Why are those passwords weak?</p>
+								<ul>
+									<li>They're easy to guess or crack. Really easy!</li>
+									<li>If one of your logins is compromised, a hacker then has access to all your services.</li>
+								</ul>
+						</div>
+						<div class="col-xs-4">
+							<p>! What's the solution?</p>
+							<ul>
+								<li>Generate strong passwords.</li>
+							</ul>
+						</div>
+			 </div>
+			</section>
+	</div>
+	<footer>
+				<p class="footer">Made with 💖 by Surya</p>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+	</script>
+
+</body>
+
+</html>

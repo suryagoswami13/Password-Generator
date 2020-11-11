@@ -1,0 +1,241 @@
+body {
+  background-image: url("../images/Stars.jpg");
+  background-size: cover;
+  background-position: top center;
+  font-family: 'montserrat', sans-serif;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* background-image: linear-gradient(to bottom, grey , white); */
+  /* max-width: 100%; */
+}
+
+.container{
+  margin: 0 auto;
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)); */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), white);
+  text-align: center;
+  color: #fff;
+}
+
+h4 {
+  color: grey;
+  padding: 5px;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  color: #fff;
+}
+
+.first {
+  padding: 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #ccffb3;
+  font-weight: 500;
+  /* border-style: inset;
+  border-color: grey; */
+  /* text-decoration-line: underline;
+  text-decoration-style: wavy; */
+  /* text-decoration-line: underline;
+  text-decoration-style: double; */
+}
+
+.out {
+  color: #000000;
+  padding: 5px;
+  float: left;
+  max-width: 100%;
+  font-size: 4rem;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 5px solid green;
+  border-radius: 10px;
+}
+
+
+.myBtn {
+  float: left;
+  /* margin-top: 10px; */
+  padding: 20px 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  max-width: 100%;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+header {
+  text-align: right;
+  color: #fff;
+  background: black;
+  /* position: fixed; */
+  border: 3px solid black;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.spann {
+  /* display: flex;
+  flex-direction: column; */
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 15px;
+  /* margin-right: 15px; */
+  overflow: hidden;
+}
+
+.in {
+  display: inline-block;
+  margin: 0;
+  float: left;
+  text-align: center;
+  background-color: #fff;
+  color: #000000;
+  font-size: 30px;
+  /* margin-right: 50%; */
+  text-decoration: none;
+  border: none;
+  outline-color: #0000ff;
+  margin-bottom: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin-left: 0;
+  /* width: 100%; */
+  /* padding: 10px; */
+  /* margin: 10px 10px 10px 10px; */
+  /* margin-left: 50%; */
+  /* border-radius: 16px 0px 16px 0px; */
+  /* border-bottom: 3px solid green; */
+  /* border-bottom: 3px solid #DF8E00; */
+  /* margin-left: 0; */
+}
+
+.pass {
+ margin-left: 0;
+ max-width: 100%;
+ float: left;
+ font-size: 20px;
+ color: #fff;
+ padding: 10px;
+ font-weight: 2rem;
+ margin-top: 0;
+ margin-bottom: 200px;
+ /* background-color: rgba(255, 255, 255, 0.2); */
+ /* background-color: grey; */
+}
+
+.wrap-up {
+  /* margin-top: 500px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100vh;
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)); */
+  /* background-size: cover; */
+  /* text-align: center; */
+  color: #fff;
+  margin-bottom: 0;
+  /* background-color: #fff; */
+}
+
+ul {
+  margin-bottom: 200px;
+}
+
+li {
+  list-style:square;
+  text-align: left;
+  max-width: 100%;
+  font-size: 15px;
+  color: #4d4d4d;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  max-width: 100%;
+  font-size: 15px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  /* padding: 15px; */
+  font-weight: 900;
+  color: #4d4d4d;
+  margin-top: 50px;
+}
+
+button {
+  float: left;
+  padding: 20px 20px;
+  text-align: center;
+  max-width: 100%;
+  font-weight: 500;
+  font-size: 2rem;
+  background-color: grey;
+  /* #9494b8; */
+  /* #000000; */
+  /* #555; */
+  border: none;
+  /* border-style: solid; */
+  /* border-color: #555 transparent transparent transparent; */
+  border-radius: 10px;
+  /* border-radius: 16px 0px 16px 0px; */
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+/* position: fixed; */
+margin-top: 0;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+margin-bottom: 0;
+padding: 0;
+/* opacity: 0.8; */
+}
+
+.footer {
+  padding: 10px;
+  margin:0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .in {
+	  margin-left: 10px;
+  }
+
+
+}
